@@ -1,0 +1,21 @@
+module_name: PC104 Serial Servo
+serial_config:
+    device: /dev/ttyS4
+    baudrate: 115200
+parameters:
+    - group: PC104_SERVO
+      definitions:
+        PC104_SERVO_DEV:
+            description:
+                short: Serial device
+                long: Default serial device used for the servo controller.
+            type: string
+            default: /dev/ttyS4
+        PC104_SERVO_BAUD:
+            description:
+                short: Baud rate
+                long: Baud rate used for the servo controller link.
+            type: int32
+            default: 115200
+            min: 9600
+            max: 115200
