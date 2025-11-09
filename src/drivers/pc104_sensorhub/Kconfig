@@ -1,0 +1,5 @@
+menuconfig DRIVERS_PC104_SENSORHUB
+        bool "pc104 sensor hub"
+        default n
+        ---help---
+                Enable support for the PC104 serial sensor hub that provides fused orientation and GPS data.

@@ -114,3 +114,7 @@ endif()
 if(EXISTS "${PX4_BOARD_DIR}/sitl.cmake")
 include ("${PX4_BOARD_DIR}/sitl.cmake")
 endif()
+
+if(EXISTS "${PX4_BOARD_DIR}/${PX4_BOARD_MODEL}.cmake")
+include ("${PX4_BOARD_DIR}/${PX4_BOARD_MODEL}.cmake")
+endif()
