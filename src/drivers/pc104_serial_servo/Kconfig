@@ -1,0 +1,5 @@
+menuconfig DRIVERS_PC104_SERIAL_SERVO
+        bool "pc104 serial servo"
+        default n
+        ---help---
+                Enable support for the PC104 serial servo output driver.

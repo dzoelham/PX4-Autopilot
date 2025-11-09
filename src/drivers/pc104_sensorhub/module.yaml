@@ -1,0 +1,21 @@
+module_name: PC104 Sensor Hub
+serial_config:
+    device: /dev/ttyS3
+    baudrate: 115200
+parameters:
+    - group: PC104_SENSORHUB
+      definitions:
+        PC104_SH_DEV:
+            description:
+                short: Serial device
+                long: Default serial device used for the sensor hub.
+            type: string
+            default: /dev/ttyS3
+        PC104_SH_BAUD:
+            description:
+                short: Baud rate
+                long: Baud rate used when talking to the sensor hub.
+            type: int32
+            default: 115200
+            min: 9600
+            max: 115200
